@@ -57,3 +57,18 @@ df_kosong = df_kosong.sort_values(by='tgl_data')
 df_kosong.to_csv("Log_Data_Hujan_Kosong.csv", index=False)
 
 print(f"Laporan berhasil dibuat! {len(df_kosong)} baris data kosong telah direkam ke 'Log_Data_Hujan_Kosong.csv'")
+==================================================================================================================
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 1. Load Data Revisi (Gunakan pemisah titik koma)
+df = pd.read_csv("DATA AWS TANGSEL 21-25.csv", sep=";")
+
+# 2. Konversi kolom tgl_data menjadi format Waktu (Datetime)
+df['tgl_data'] = pd.to_datetime(df['tgl_data'])
+
+# 3. Paksa kolom Hujan menjadi numerik (data teks yang rusak akan menjadi kosong/NaN)
+df['Hujan (rr)'] = pd.to_numeric(df['Hujan (rr)'], errors='coerce')
+
+print("Tahap 1 Selesai. Dim, df.shape)

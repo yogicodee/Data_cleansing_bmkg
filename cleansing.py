@@ -41,3 +41,19 @@ print(f"Ditemukan dan dihapus {jumlah_duplikat} baris data duplikat.")
 # 2. Pemusnahan Data Kosong (Sesuai instruksi)
 df_bersih = df.dropna().copy()
 print(f"Sisa data setelah cleansing mutlak: {len(df_bersih)} baris.")
+=============================================================================================
+# 1. Isolasi semua baris yang Hujan (rr)-nya kosong
+df_kosong = df[df['Hujan (rr)'].isnull()].copy()
+
+# 2. Ekstraksi Tahun, Tanggal, dan Jam untuk pencatatan riwayat
+df_kosong['Tahun'] = df_kosong['tgl_data'].dt.year
+df_kosong['Tanggal'] = df_kosong['tgl_data'].dt.date
+df_kosong['Jam'] = df_kosong['tgl_data'].dt.time
+
+# 3. Sortir kronologis dari jam ke jam
+df_kosong = df_kosong.sort_values(by='tgl_data')
+
+# 4. Simpan ke dalam CSV baru sebagai bukti/laporan
+df_kosong.to_csv("Log_Data_Hujan_Kosong.csv", index=False)
+
+print(f"Laporan berhasil dibuat! {len(df_kosong)} baris data kosong telah direkam ke 'Log_Data_Hujan_Kosong.csv'")

@@ -32,3 +32,12 @@ kolom_laporan = ['tgl_data','rr']
 df_kosong[kolom_laporan].to_csv("Log_Data_Kosong_Tercatat_kondisi_1.csv", index=False)
 
 print(f"Laporan berhasil dibuat! Ada {len(df_kosong)} baris data kosong yang telah dicatat di 'Log_Data_Kosong_Tercatat_kondisi_1.csv'")
+================================================================================================================================================
+# 1. Pengecekan dan Penghapusan Data Duplikat
+jumlah_duplikat = df.duplicated().sum()
+df = df.drop_duplicates()
+print(f"Ditemukan dan dihapus {jumlah_duplikat} baris data duplikat.")
+
+# 2. Pemusnahan Data Kosong (Sesuai instruksi)
+df_bersih = df.dropna().copy()
+print(f"Sisa data setelah cleansing mutlak: {len(df_bersih)} baris.")

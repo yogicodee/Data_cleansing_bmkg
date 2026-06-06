@@ -88,3 +88,7 @@ df['tgl_data'] = pd.to_datetime(df['tgl_data'])
 df['Hujan (rr)'] = pd.to_numeric(df['Hujan (rr)'], errors='coerce')
 
 print("Tahap 1 Selesai. Dimensi Data Saat Ini:", df.shape)
+
+# 4. Simpan dataframe yang sudah distandardisasi ke dalam file CSV baru
+nama_file = "Data_Tahap1_Standardisasi.csv"
+df.to_csv(nama_file, index=False)

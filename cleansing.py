@@ -80,3 +80,6 @@ from google.colab import files  # Modul wajib untuk fitur download di Google Col
 
 # 1. Load Data Revisi (Gunakan pemisah titik koma)
 df = pd.read_csv("DATA AWS TANGSEL 21-25.csv", sep=";")
+
+# 2. Konversi kolom tgl_data menjadi format Waktu (Datetime)
+df['tgl_data'] = pd.to_datetime(df['tgl_data'])

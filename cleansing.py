@@ -92,3 +92,6 @@ print("Tahap 1 Selesai. Dimensi Data Saat Ini:", df.shape)
 # 4. Simpan dataframe yang sudah distandardisasi ke dalam file CSV baru
 nama_file = "Data_Tahap1_Standardisasi.csv"
 df.to_csv(nama_file, index=False)
+
+# 5. Trigger eksekusi download otomatis ke komputer lokal BOSS
+files.download(nama_file)

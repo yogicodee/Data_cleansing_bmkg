@@ -72,3 +72,8 @@ df['tgl_data'] = pd.to_datetime(df['tgl_data'])
 df['Hujan (rr)'] = pd.to_numeric(df['Hujan (rr)'], errors='coerce')
 
 print("Tahap 1 Selesai. Dim, df.shape)
+===============================================================================================
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from google.colab import files  # Modul wajib untuk fitur download di Google Colab

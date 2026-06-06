@@ -83,3 +83,8 @@ df = pd.read_csv("DATA AWS TANGSEL 21-25.csv", sep=";")
 
 # 2. Konversi kolom tgl_data menjadi format Waktu (Datetime)
 df['tgl_data'] = pd.to_datetime(df['tgl_data'])
+
+# 3. Paksa kolom Hujan menjadi numerik (data teks yang rusak akan menjadi kosong/NaN)
+df['Hujan (rr)'] = pd.to_numeric(df['Hujan (rr)'], errors='coerce')
+
+print("Tahap 1 Selesai. Dimensi Data Saat Ini:", df.shape)

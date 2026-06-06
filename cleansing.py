@@ -77,3 +77,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from google.colab import files  # Modul wajib untuk fitur download di Google Colab
+
+# 1. Load Data Revisi (Gunakan pemisah titik koma)
+df = pd.read_csv("DATA AWS TANGSEL 21-25.csv", sep=";")

@@ -6,3 +6,4 @@ Script Python ini berfungsi untuk membersihkan, merapikan, dan memproses dataset
 
 *   **Pembersihan Duplikasi:** Otomatis mendeteksi dan menghapus baris data yang berulang (duplicate data).
 *   **Penanganan Data Kosong:** Menghapus atau mengisi (imputasi) kolom yang memiliki nilai kosong (missing values).
+*   **Standardisasi Data:** Menyesuaikan dan memperbaiki format data yang tidak sesuai (misalnya kesalahan pengetikan atau anomali nilai).

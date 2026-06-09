@@ -8,3 +8,11 @@ Script Python ini berfungsi untuk membersihkan, merapikan, dan memproses dataset
 *   **Penanganan Data Kosong:** Menghapus atau mengisi (imputasi) kolom yang memiliki nilai kosong (missing values).
 *   **Standardisasi Data:** Menyesuaikan dan memperbaiki format data yang tidak sesuai (misalnya kesalahan pengetikan atau anomali nilai).
 *   **Ekspor Otomatis ke Lokal:** Mengunduh dan menyimpan hasil pembersihan data secara otomatis ke penyimpanan lokal (misalnya dalam format `.csv`).
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Processing-green">
+  <img src="https://img.shields.io/badge/BMKG-Dataset-orange">
+</p>
+
+

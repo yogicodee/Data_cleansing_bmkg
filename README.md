@@ -15,12 +15,6 @@ Script Python ini berfungsi untuk membersihkan, merapikan, dan memproses dataset
   <img src="https://img.shields.io/badge/BMKG-Dataset-orange">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-blue">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Processing-green">
-  <img src="https://img.shields.io/badge/BMKG-Dataset-orange">
-</p>
-
 <h1 align="center">🌦️ Data Cleansing BMKG</h1>
 
 <p align="center">

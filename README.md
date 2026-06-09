@@ -24,9 +24,14 @@ Python-based data cleansing pipeline for BMKG weather datasets.
 ## 📊 Sample Dataset
 
 ### Before Cleaning
-
 | Tanggal | Suhu | Curah Hujan |
 |----------|------|-------------|
 | 2024-01-01 | 32 | NaN |
 | 2024-01-01 | 32 | NaN |
 | NULL | 30 | 5 |
+
+### After Cleaning
+| Tanggal | Suhu | Curah Hujan |
+|----------|------|-------------|
+| 2024-01-01 | 32 | 0 |
+| 2024-01-02 | 30 | 5 |

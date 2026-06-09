@@ -35,3 +35,16 @@ Python-based data cleansing pipeline for BMKG weather datasets.
 |----------|------|-------------|
 | 2024-01-01 | 32 | 0 |
 | 2024-01-02 | 30 | 5 |
+
+## 🔄 Workflow
+Raw Dataset
+      ↓
+Duplicate Removal
+      ↓
+Missing Value Handling
+      ↓
+Data Standardization
+      ↓
+Clean Dataset
+      ↓
+Export CSV

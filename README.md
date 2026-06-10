@@ -98,3 +98,20 @@ python cleansing.py
 ```
 
 ---
+## 📈 Example Output
+
+```bash
+Dataset Loaded Successfully
+
+Rows Before Cleaning : 15,234
+
+Duplicate Rows Removed : 125
+
+Missing Values Fixed : 56
+
+Rows After Cleaning : 15,109
+
+Clean Dataset Exported Successfully
+```
+
+---

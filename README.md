@@ -88,3 +88,13 @@ pip install pandas numpy
 ```
 
 ---
+
+## 🚀 Usage
+
+Jalankan script:
+
+```bash
+python cleansing.py
+```
+
+---

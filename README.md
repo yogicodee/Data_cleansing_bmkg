@@ -130,3 +130,24 @@ Clean Dataset Exported Successfully
 - CSV Processing
 
 ---
+## 🎯 Use Cases
+
+Project ini dapat digunakan untuk:
+
+- Data Preprocessing
+- Data Analytics
+- Machine Learning Preparation
+- Weather Data Analysis
+- Environmental Research
+
+---
+
+## 🔮 Future Improvements
+
+- Web-based Interface
+- Interactive Dashboard
+- Excel Export Support
+- Automatic Data Validation
+- Data Visualization
+
+---

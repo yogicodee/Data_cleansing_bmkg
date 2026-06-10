@@ -1,50 +1,90 @@
-# Data Cleansing BMKG
+# 🌦️ Data Cleansing BMKG
 
-Script Python ini berfungsi untuk membersihkan, merapikan, dan memproses dataset mentah dari BMKG (Badan Meteorologi, Klimatologi, dan Geofisika) agar siap digunakan untuk analisis lebih lanjut.
+Python script untuk membersihkan, merapikan, dan memproses dataset cuaca BMKG sehingga siap digunakan untuk analisis data, visualisasi, maupun machine learning.
 
-## **Fitur Utama**
+---
 
-*   **Pembersihan Duplikasi:** Otomatis mendeteksi dan menghapus baris data yang berulang (duplicate data).
-*   **Penanganan Data Kosong:** Menghapus atau mengisi (imputasi) kolom yang memiliki nilai kosong (missing values).
-*   **Standardisasi Data:** Menyesuaikan dan memperbaiki format data yang tidak sesuai (misalnya kesalahan pengetikan atau anomali nilai).
-*   **Ekspor Otomatis ke Lokal:** Mengunduh dan menyimpan hasil pembersihan data secara otomatis ke penyimpanan lokal (misalnya dalam format `.csv`).
+## 📖 Overview
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-blue">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Processing-green">
-  <img src="https://img.shields.io/badge/BMKG-Dataset-orange">
-</p>
+Project ini dibuat untuk mengotomatisasi proses data cleansing pada dataset BMKG yang masih mengandung:
 
-<h1 align="center">🌦️ Data Cleansing BMKG</h1>
+- Duplicate records
+- Missing values
+- Format data tidak konsisten
+- Data anomali
 
-<p align="center">
-Python-based data cleansing pipeline for BMKG weather datasets.
-</p>
+Hasil akhirnya adalah dataset yang lebih bersih dan siap digunakan untuk proses analisis lanjutan.
 
-## 📊 Sample Dataset
+> ⚠️ Dataset asli tidak dipublikasikan karena alasan privasi dan kebijakan data. Repository ini hanya menampilkan source code dan contoh penggunaan.
 
-### Before Cleaning
-| Tanggal | Suhu | Curah Hujan |
-|----------|------|-------------|
-| 2024-01-01 | 32 | NaN |
-| 2024-01-01 | 32 | NaN |
-| NULL | 30 | 5 |
+---
 
-### After Cleaning
-| Tanggal | Suhu | Curah Hujan |
-|----------|------|-------------|
-| 2024-01-01 | 32 | 0 |
-| 2024-01-02 | 30 | 5 |
+## ✨ Features
+
+- ✅ Duplicate Data Removal
+- ✅ Missing Value Handling
+- ✅ Data Standardization
+- ✅ CSV Export
+- ✅ Automatic Processing Pipeline
+
+---
 
 ## 🔄 Workflow
-Raw Dataset
-      ↓
-Duplicate Removal
-      ↓
-Missing Value Handling
-      ↓
-Data Standardization
-      ↓
-Clean Dataset
-      ↓
-Export CSV
+
+```mermaid
+flowchart TD
+A[Raw Dataset] --> B[Remove Duplicates]
+B --> C[Handle Missing Values]
+C --> D[Standardize Data]
+D --> E[Export Clean Dataset]
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+Data_cleansing_bmkg/
+│
+├── cleansing.py
+├── README.md
+└── sample_output/
+```
+
+---
+
+## 📊 Dataset Structure
+
+Contoh struktur dataset yang digunakan:
+
+| Column | Data Type |
+|----------|----------|
+| tanggal | Date |
+| suhu | Float |
+| kelembaban | Float |
+| curah_hujan | Float |
+| kecepatan_angin | Float |
+
+---
+
+## ⚙️ Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/yogicodee/Data_cleansing_bmkg.git
+```
+
+Masuk ke folder project:
+
+```bash
+cd Data_cleansing_bmkg
+```
+
+Install dependency:
+
+```bash
+pip install pandas numpy
+```
+
+---

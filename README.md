@@ -39,8 +39,6 @@ C --> D[Standardize Data]
 D --> E[Export Clean Dataset]
 ```
 
----
-
 ## 📂 Project Structure
 
 ```text
@@ -50,7 +48,6 @@ Data_cleansing_bmkg/
 ├── README.md
 └── sample_output/
 ```
-
 ---
 
 ## 📊 Dataset Structure
@@ -86,7 +83,6 @@ Install dependency:
 ```bash
 pip install pandas numpy
 ```
-
 ---
 
 ## 🚀 Usage
@@ -113,5 +109,24 @@ Rows After Cleaning : 15,109
 
 Clean Dataset Exported Successfully
 ```
+---
+
+## 📋 Cleaning Statistics
+
+| Metric | Value |
+|----------|----------|
+| Total Records | 15,234 |
+| Duplicate Removed | 125 |
+| Missing Values Fixed | 56 |
+| Processing Time | 2.3 Seconds |
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- CSV Processing
 
 ---
